@@ -150,7 +150,7 @@ to alter configuration files respectively (this ofcourse can be problematic on s
 * small memory footprint - output is sent realtime, so even 12GB of generated data can be sent using ~8MB of RAM.
 * low CPU usage - every system call (like microtime()) is done only once per packet sent, every mathematical calculation result is cached when necessary.
 * nonintrusive throttling - you just need to do one include() in your index.php or master file to use this class (usually there is no need to change your own code, like phpBB or Drupal)
-* working with PHP 5.0, 5.2, 5.3+, as an Apache module, FastCGI or even CLI process on all known Operating Systems.
+* working with PHP 5.6+, as an Apache module, FastCGI or even CLI process on all known Operating Systems.
 * working out of the box!
 
 #### CONS:
