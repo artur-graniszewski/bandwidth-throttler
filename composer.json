@@ -1,0 +1,47 @@
+{
+  "name": "zeus-server/bandwidth-throttler",
+  "description": "This library can be used to limit (throttle) the speed of files served for download. It intercepts the PHP script output by setting a buffering handler that is called every time a given number of bytes are served to the browser. The library measures the time since the last time the PHP output buffer was flushed and hold on PHP for a while if the average download speed is above a given limit.",
+  "type": "library",
+  "license": "LGPL-3.0-only",
+  "authors": [
+    {
+      "name": "Artur Graniszewski",
+      "email": "artur.graniszewski@gmail.com"
+    }
+  ],
+  "support": {
+    "email": "artur.graniszewski@gmail.com",
+    "source": "https://github.com/artur-graniszewski/Zeus-for-PHP-bandwidth-throttler",
+    "issues": "https://github.com/artur-graniszewski/Zeus-for-PHP-bandwidth-throttler/issues"
+  },
+  "homepage": "https://github.com/artur-graniszewski/tigra-image-library",
+  "keywords": [
+    "throttle",
+    "bandwidth",
+    "download speed",
+    "download limit",
+    "transfer limit",
+    "transfer speed"
+  ],
+  "require": {
+    "php": "^5.6"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Zeus\\QoS\\": "."
+    }
+  },
+  "autoload-dev": {
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@test"
+    ],
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": "phpunit"
+  }
+}
